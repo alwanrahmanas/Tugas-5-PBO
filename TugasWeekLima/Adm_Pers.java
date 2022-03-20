@@ -14,7 +14,7 @@ public class Adm_Pers extends Pegawai{
 
     }
      
-    public double getAttendance(){
+    public double Attendance(){
 
        return this.Attendance= this.WorkDays;
     }
@@ -32,7 +32,7 @@ public class Adm_Pers extends Pegawai{
         System.out.println("Nama: "+ this.Nama);
         System.out.println("SSID: "+ this.SSID);
         System.out.println("Email: "+this.Email);
-        System.out.println("Attendance: "+this.getAttendance()); 
+        System.out.println("Attendance: "+this.Attendance()); 
         System.out.println("Hari kerja: "+this.getWorkDays()); 
     
     
