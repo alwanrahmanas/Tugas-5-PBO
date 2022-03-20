@@ -1,6 +1,6 @@
 
 
-//import javax.sound.midi.Instrument;
+
 //import TugasWeekLima.Pegawai;
 
 public class Research extends Pegawai{
@@ -19,7 +19,7 @@ public Research(String Nama, String SSID, String Email,double Attendance, double
     this.Institut = Institut;
 }
 
-public double getAttendance(){
+public double Attendance(){
 
     return this.teachHours/5;
 
@@ -35,7 +35,7 @@ public void display(){
     System.out.println("Nama: "+ this.Nama);
     System.out.println("SSID: "+ this.SSID);
     System.out.println("Email: "+this.Email);
-    System.out.println("Attendance: "+this.getAttendance()); 
+    System.out.println("Attendance: "+this.Attendance()); 
     System.out.println("Jam Ajar: "+ this.teachHours);
     System.out.println("Lapangan studi: "+this.fieldStudy);
     System.out.println("Institut: "+ this.Institut.getInstituteName());
