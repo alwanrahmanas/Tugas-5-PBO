@@ -9,6 +9,9 @@ public class Project{
     private String nama;
     private int duration;
     private Date startingDate;
+    private Date endDate;
+    public Research Pengelola;
+
     public Project(String nama, int i, java.sql.Date startingDate, java.sql.Date endDate,
             Research pengelola) {
         this.nama = nama;
@@ -17,19 +20,7 @@ public class Project{
         this.endDate = endDate;
         this.Pengelola = pengelola;
     }
-
-    private Date endDate;
-    public Research Pengelola;
-
-    /* Project(String nama, String duration, Date startingDate, Date endDate, Research pengelola){
-
-        this.nama = nama;
-        this.duration = duration;
-        this.setStartingDate(startingDate);
-        this.endDate = endDate;
-        this.Pengelola =pengelola;
-    } */
-
+    
     public Date getStartingDate() {
         return startingDate;
     }
@@ -43,7 +34,7 @@ public class Project{
     
     public void display(){
         System.out.println("Nama Course: "+ this.nama);
-        System.out.println("Durasi: "+ this.duration+" SKS");
+        System.out.println("Durasi: "+ this.duration+" Jam");
         System.out.println("Tanggal mulai: "+this.getStartingDate());
         System.out.println("Tanggal berakhir: "+ this.getEndDate());
         System.out.println("Pengelola (dekan): "+this.Pengelola.getName());
