@@ -33,7 +33,7 @@ public class Project{
     }
     
     public void display(){
-        System.out.println("Nama Course: "+ this.nama);
+        System.out.println("Nama Project: "+ this.nama);
         System.out.println("Durasi: "+ this.duration+" Jam");
         System.out.println("Tanggal mulai: "+this.getStartingDate());
         System.out.println("Tanggal berakhir: "+ this.getEndDate());
